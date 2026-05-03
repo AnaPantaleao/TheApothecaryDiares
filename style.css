@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+    /* Faz width e height incluírem padding e border no cálculo total do
+tamanho do elemento */
+    margin: 0;
+    /* Remove a margem padrão que o navegador aplica nos elementos */
+    padding: 0;
+    /* Remove o espaçamento interno padrão que o navegador aplica nos elementos
+*/
+}
+
+body {
+    font-family: 'Quicksand', cursive;
+    /* Define a fonte principal do texto da página, com
+fontes alternativas caso a primeira não exista */
+    font-size: 20px;
+    line-height: 1.6;
+    /* Aumenta a altura entre as linhas do texto para melhorar a leitura */
+    color:#f4a4b8;
+    /* Define a cor padrão do texto */
+    background: #f9fafb;
+    /* Define a cor de fundo da página */
+    
+
+
+.container {
+   
+    width: min(1100px, 90%);
+    /* Define a largura como no máximo 1100px ou 90% da tela,
+escolhendo o menor valor */
+    margin: 0 auto;
+    /* Remove margem em cima/baixo e centraliza horizontalmente o bloco */
+}
+
+header {
+    background: #E8C3D9;
+    /* Define a cor de fundo do cabeçalho */
+    color: #67548b;
+    /* Define a cor do texto dentro do cabeçalho */
+    padding: 20px 0;
+    /* Adiciona espaço interno em cima e embaixo, sem espaço nas laterais */
+}
+
+nav {
+    display: flex;
+    /* Coloca os elementos do menu em layout flexível */
+    justify-content: flex-start;
+    /* Distribui os itens com espaço entre eles */
+    align-items: center;
+    /* Alinha os itens verticalmente ao centro */
+    gap: 16px;
+    /* Cria um espaçamento entre os itens filhos */
+    flex-wrap: wrap;
+    /* Permite que os itens quebrem para a linha de baixo em telas menores */
+}
+
+nav ul {
+    margin-left: auto;
+    list-style: none;
+    /* Remove as bolinhas padrão da lista */
+    display: flex;
+    /* Coloca os itens da lista lado a lado */
+    gap: 16px;
+    /* Adiciona espaçamento entre os itens da lista */
+}
+
+nav a {
+    color: white;
+    /* Define a cor dos links do menu */
+    text-decoration: none;
+    /* Remove o sublinhado padrão dos links */
+    font-weight: bold;
+    /* Deixa o texto do link em negrito */
+}
+
+.hero {
+    background-image: url(./aqua.jpg);
+    background-size: cover;      /* Cobre toda a área (corta se necessário) */
+    background-size: contain;    /* Mostra toda a imagem (pode sobrar espaço) */
+    background-size: 100% auto;  /* Largura 100%, altura automática */
+    width: 100%;
+    height: 200px;
+    font-size: 20px;
+    background-position: center;
+    /* Remove espaços extras abaixo da imagem */
+    padding: 550px 0;
+    /* Adiciona espaço interno em cima e embaixo da seção principal */
+    text-align: center;
+    /* Centraliza o texto horizontalmente */
+    
+    text-shadow: 
+        1px 1px 0 #ffffff,
+        1px 1px 0 rgb(255, 255, 255),
+        0 0 30px rgba(255, 253, 253, 0.8);
+    -webkit-text-stroke: 0,2% #ffffff;
+}
+    
+    
+
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    /* Define um tamanho grande para o título principal */
+    margin-bottom: 16px;
+    /* Adiciona espaço abaixo do título */
+}
+
+.hero p {
+    max-width: 700px;
+    /* Limita a largura máxima do parágrafo para facilitar a leitura */
+    margin: 0 auto 24px;
+    /* Remove margem em cima, centraliza horizontalmente e adiciona
+margem embaixo */
+}
+
+.btn {
+    display: inline-block;
+    /* Faz o link se comportar como bloco em linha, permitindo padding e
+tamanho melhor controlados */
+    background: #f4a4b8;
+    /* Define a cor de fundo do botão */
+    color: #67548b;
+    /* Define a cor do texto do botão */
+    text-decoration: none;
+    /* Remove o sublinhado do link */
+    padding: 12px 24px;
+    /* Adiciona espaço interno vertical e horizontal */
+    border-radius: 8px;
+    /* Arredonda os cantos do botão */
+    font-weight: bold;
+    /* Deixa o texto do botão em negrito */
+}
+
+.features {
+    color: #67548b;
+    padding: 40px 0;
+    /* Adiciona espaço interno em cima e embaixo da seção */
+    background: #f4a4b8
+    /* Define fundo branco para destacar a seção */
+}
+
+.grid {
+    display: grid;
+    /* Ativa layout em grade para os elementos filhos */
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    /* Cria colunas responsivas que
+se ajustam automaticamente com mínimo de 220px */
+    gap: 20px;
+    /* Define o espaço entre os itens da grade */
+    text-align: center;
+}
+
+article {
+    background:#C8E6D9;
+    /* Define uma cor de fundo clara para os cards */
+    padding: 20px;
+    /* Adiciona espaço interno dentro do card */
+    border-radius: 10px;
+    /* Arredonda os cantos do card */
+}
+
+.google-link {
+    background-color: #C8E6D9;
+    padding: 100px 0;
+    /* Adiciona espaço interno em cima e embaixo da seção */
+    text-align: center;
+    /* Centraliza o conteúdo da seção */
+    color: #67548b;
+}
+
+.google-link h2 {
+    margin-bottom: 50px;  /* Aumente este valor para mais espaço */
+}
+
+footer {
+    background:#E8C3D9;
+    /* Define a cor de fundo do rodapé */
+    color: #67548b;
+    /* Define a cor do texto do rodapé */
+    text-align: center;
+    /* Centraliza o texto */
+    padding: 20px 0;
+    /* Adiciona espaço interno em cima e embaixo */
+    margin-top: 0px;
+    /* Cria um espaço acima do rodapé */
+}
