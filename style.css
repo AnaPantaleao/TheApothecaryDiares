@@ -74,7 +74,7 @@ nav a {
 }
 
 .hero {
-    background-image: url(./aqua.jpg);
+    background-image: url('./aqua.jpg');
     background-size: cover;      /* Cobre toda a área (corta se necessário) */
     background-size: contain;    /* Mostra toda a imagem (pode sobrar espaço) */
     background-size: 100% auto;  /* Largura 100%, altura automática */
