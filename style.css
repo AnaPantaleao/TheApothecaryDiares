@@ -24,8 +24,8 @@ fontes alternativas caso a primeira não exista */
 
 
 .container {
-   
-    width: min(1100px, 90%);
+   max-width: 1200px;
+    width: 100%;
     /* Define a largura como no máximo 1100px ou 90% da tela,
 escolhendo o menor valor */
     margin: 0 auto;
@@ -76,12 +76,11 @@ nav a {
 .hero {
     background-image: url('aqua.jpg');
     background-size: cover;      /* Cobre toda a área (corta se necessário) */
-    background-size: contain;    /* Mostra toda a imagem (pode sobrar espaço) */
-    background-size: 100% auto;  /* Largura 100%, altura automática */
+    background-position: center;   
+    background-attachment: scroll;
     width: 100%;
     height: 200px;
     font-size: 20px;
-    background-position: center;
     /* Remove espaços extras abaixo da imagem */
     padding: 550px 0;
     /* Adiciona espaço interno em cima e embaixo da seção principal */
