@@ -263,11 +263,4 @@ footer {
     }
 }
 
-video, iframe {
-    max-width: 100%;
-    height: auto;
-}
 
-.hero {
-    background-size: auto 100%;
-}
