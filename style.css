@@ -101,18 +101,32 @@ nav a {
     
 
 .hero h1 {
+    color:#fe81a0;
+    text-shadow: 1px 1px 1px white;
+   
+    border-radius: 20px;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.7);
+    backdrop-filter:blur(1px);
     font-size: 2.5rem;
     /* Define um tamanho grande para o título principal */
-    margin-bottom: 16px;
+    margin-bottom: 20px;
     /* Adiciona espaço abaixo do título */
-}
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
 
 .hero p {
+    color:#fe81a0;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    font-weight: 700 ;
+    border-radius: 10px;
+    backdrop-filter: blur(2px);
     max-width: 700px;
     /* Limita a largura máxima do parágrafo para facilitar a leitura */
     margin: 0 auto 24px;
-    /* Remove margem em cima, centraliza horizontalmente e adiciona
-margem embaixo */
 }
 
 .btn {
