@@ -33,6 +33,7 @@ escolhendo o menor valor */
 }
 
 header {
+    font-family:'Playfair Display', serif ;
     background: #E8C3D9;
     /* Define a cor de fundo do cabeçalho */
     color: #67548b;
@@ -81,6 +82,7 @@ nav a {
     background-repeat: no-repeat;
     width: 100%;
     min-height: 400px;
+    
     font-size: 20px;
     /* Remove espaços extras abaixo da imagem */
     padding: 150px 20px;
@@ -88,11 +90,7 @@ nav a {
     text-align: center;
     /* Centraliza o texto horizontalmente */
     
-    text-shadow: 
-        1px 1px 0 #ffffff,
-        1px 1px 0 rgb(255, 255, 255),
-        0 0 30px rgba(255, 253, 253, 0.8);
-    -webkit-text-stroke: 0,2% #ffffff;
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -101,13 +99,33 @@ nav a {
     
 
 .hero h1 {
+    
+    color:#fe81a0;
+    text-shadow: 1px 1px 1px white;
+   
+    border-radius: 20px;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.7);
+    backdrop-filter:blur(1px);
     font-size: 2.5rem;
     /* Define um tamanho grande para o título principal */
-    margin-bottom: 16px;
+    margin-bottom: 20px;
     /* Adiciona espaço abaixo do título */
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+    
+    
 }
 
 .hero p {
+    color:#fe81a0;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    font-weight: 700 ;
+    border-radius: 10px;
+    backdrop-filter: blur(2px);
     max-width: 700px;
     /* Limita a largura máxima do parágrafo para facilitar a leitura */
     margin: 0 auto 24px;
