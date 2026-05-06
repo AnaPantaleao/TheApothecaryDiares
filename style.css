@@ -1,82 +1,55 @@
 * {
     box-sizing: border-box;
-    /* Faz width e height incluírem padding e border no cálculo total do
-tamanho do elemento */
     margin: 0;
-    /* Remove a margem padrão que o navegador aplica nos elementos */
     padding: 0;
-    /* Remove o espaçamento interno padrão que o navegador aplica nos elementos
-*/
 }
 
 body {
     font-family: 'Quicksand', cursive;
-    /* Define a fonte principal do texto da página, com
-fontes alternativas caso a primeira não exista */
     font-size: 20px;
     line-height: 1.6;
-    /* Aumenta a altura entre as linhas do texto para melhorar a leitura */
     color:#f4a4b8;
-    /* Define a cor padrão do texto */
     background: #f9fafb;
-    /* Define a cor de fundo da página */
 }
 
 
 .container {
    max-width: 1200px;
     width: 100%;
-    /* Define a largura como no máximo 1100px ou 90% da tela,
-escolhendo o menor valor */
     margin: 0 auto;
-    /* Remove margem em cima/baixo e centraliza horizontalmente o bloco */
 }
 
 header {
     font-family:'Playfair Display', serif ;
     background: #E8C3D9;
-    /* Define a cor de fundo do cabeçalho */
     color: #67548b;
-    /* Define a cor do texto dentro do cabeçalho */
     padding: 20px 0;
-    /* Adiciona espaço interno em cima e embaixo, sem espaço nas laterais */
 }
 
 nav {
     display: flex;
-    /* Coloca os elementos do menu em layout flexível */
     justify-content: flex-start;
-    /* Distribui os itens com espaço entre eles */
     align-items: center;
-    /* Alinha os itens verticalmente ao centro */
     gap: 16px;
-    /* Cria um espaçamento entre os itens filhos */
     flex-wrap: wrap;
-    /* Permite que os itens quebrem para a linha de baixo em telas menores */
 }
 
 nav ul {
     margin-left: auto;
     list-style: none;
-    /* Remove as bolinhas padrão da lista */
     display: flex;
-    /* Coloca os itens da lista lado a lado */
     gap: 16px;
-    /* Adiciona espaçamento entre os itens da lista */
 }
 
 nav a {
     color: white;
-    /* Define a cor dos links do menu */
     text-decoration: none;
-    /* Remove o sublinhado padrão dos links */
     font-weight: bold;
-    /* Deixa o texto do link em negrito */
 }
 
 .hero {
     background-image: url('aqua.jpg');
-    background-size: cover;      /* Cobre toda a área (corta se necessário) */
+    background-size: cover;      
     background-position: center top;   
     background-attachment: scroll;
     background-repeat: no-repeat;
@@ -84,12 +57,8 @@ nav a {
     min-height: 400px;
     
     font-size: 20px;
-    /* Remove espaços extras abaixo da imagem */
     padding: 150px 20px;
-    /* Adiciona espaço interno em cima e embaixo da seção principal */
     text-align: center;
-    /* Centraliza o texto horizontalmente */
-    
     
     display: flex;
     align-items: center;
@@ -102,22 +71,17 @@ nav a {
     
     color:#fe81a0;
     text-shadow: 1px 1px 1px white;
-   
     border-radius: 20px;
     box-shadow: 7px 7px 7px rgba(255, 255, 255, 0.7);
     backdrop-filter:blur(1px);
     font-size: 2.5rem;
-    /* Define um tamanho grande para o título principal */
     margin-bottom: 20px;
-    /* Adiciona espaço abaixo do título */
     margin-left: auto;
     margin-right: auto;
     width: fit-content;
     text-align: center;
     padding: 10px;
     text-transform: uppercase;
-    
-    
 }
 
 .hero p {
@@ -128,123 +92,93 @@ nav a {
     border-radius: 10px;
     backdrop-filter: blur(2px);
     max-width: 700px;
-    /* Limita a largura máxima do parágrafo para facilitar a leitura */
     margin: 0 auto 24px;
-    /* Remove margem em cima, centraliza horizontalmente e adiciona
-margem embaixo */
 }
 
 .btn {
     display: inline-block;
-    /* Faz o link se comportar como bloco em linha, permitindo padding e
-tamanho melhor controlados */
     background: #f4a4b8;
-    /* Define a cor de fundo do botão */
     color: #67548b;
-    /* Define a cor do texto do botão */
     text-decoration: none;
-    /* Remove o sublinhado do link */
     padding: 12px 24px;
-    /* Adiciona espaço interno vertical e horizontal */
     border-radius: 8px;
-    /* Arredonda os cantos do botão */
     font-weight: bold;
-    /* Deixa o texto do botão em negrito */
 }
 
 .features {
     color: #67548b;
     padding: 40px 0;
-    /* Adiciona espaço interno em cima e embaixo da seção */
     background: #f4a4b8
-    /* Define fundo branco para destacar a seção */
 }
 
 .grid {
     display: grid;
-    /* Ativa layout em grade para os elementos filhos */
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    /* Cria colunas responsivas que
-se ajustam automaticamente com mínimo de 220px */
     gap: 20px;
-    /* Define o espaço entre os itens da grade */
     text-align: center;
 }
 
 article {
     background:#C8E6D9;
-    /* Define uma cor de fundo clara para os cards */
     padding: 20px;
-    /* Adiciona espaço interno dentro do card */
     border-radius: 10px;
-    /* Arredonda os cantos do card */
 }
 
 .google-link {
     background-color: #C8E6D9;
     padding: 100px 0;
-    /* Adiciona espaço interno em cima e embaixo da seção */
     text-align: center;
-    /* Centraliza o conteúdo da seção */
     color: #67548b;
 }
 
 .google-link h2 {
-    margin-bottom: 50px;  /* Aumente este valor para mais espaço */
+    margin-bottom: 50px;  
 }
 
 footer {
     background:#E8C3D9;
-    /* Define a cor de fundo do rodapé */
     color: #67548b;
-    /* Define a cor do texto do rodapé */
     text-align: center;
-    /* Centraliza o texto */
     padding: 20px 0;
-    /* Adiciona espaço interno em cima e embaixo */
     margin-top: 0;
-    /* Cria um espaço acima do rodapé */
 }
 
 @media (max-width: 768px) {
     body {
-        font-size: 16px;  /* Texto menor no celular */
+        font-size: 16px; 
     }
     
     .hero {
-        min-height: 300px;      /* Altura menor no celular */
-        padding: 60px 15px;     /* Menos espaçamento */
+        min-height: 300px;     
+        padding: 60px 15px;    
     }
     
     .hero h1 {
-        font-size: 1.8rem;      /* Título menor */
+        font-size: 1.8rem;     
     }
     
     .container {
-        width: 95%;             /* Mais largura disponível */
-        padding: 0 10px;        /* Espaço nas laterais */
+        width: 95%;           
+        padding: 0 10px;      
     }
     
-    /* Melhorar o menu no celular */
     nav {
-        flex-direction: column;  /* Empilha os itens */
+        flex-direction: column; 
         gap: 10px;
     }
     
     nav ul {
-        margin-left: 0;          /* Remove margem automática */
-        justify-content: center; /* Centraliza */
+        margin-left: 0;          
+        justify-content: center; 
     }
     
-    /* Botões maiores para toque */
     .btn {
-        padding: 15px 25px;      /* Maior no celular */
+        padding: 15px 25px;     
         font-size: 16px;
     }
     
-    /* Cards empilhados */
     .grid {
-        grid-template-columns: 1fr;  /* 1 coluna no celular */
+        grid-template-columns: 1fr; 
         gap: 15px;
     }
     
@@ -252,7 +186,6 @@ footer {
         padding: 15px;
     }
     
-    /* Espaçamento do link do Google */
     .google-link {
         padding: 60px 20px;
     }
@@ -263,7 +196,6 @@ footer {
     }
 }
 
-/* Para celulares muito pequenos (até 480px) */
 @media (max-width: 480px) {
     .hero h1 {
         font-size: 1.5rem;
